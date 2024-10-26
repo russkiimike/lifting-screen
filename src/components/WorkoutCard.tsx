@@ -33,13 +33,13 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({
 }) => {
   return (
     <div className="bg-gray-900 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-10 w-full text-white shadow-lg bg-opacity-80 mt-20">
-      <div className="flex flex-row justify-between items-center mb-6">
+      <div className="flex justify-between items-end mb-6">
         <img
-          className="h-10 sm:h-12 lg:h-13"
+          className="h-9"
           src="https://res.cloudinary.com/gymstreak/image/fetch/c_fit,q_auto,f_auto,dpr_auto/https://blog.gymstreak.com/content/images/2023/08/gymstreaklogo-2.svg"
           alt="GymStreak"
         />
-        <span className="bg-blue-600 text-sm sm:text-base lg:text-lg py-2 px-4 rounded-full font-medium">
+        <span className="bg-blue-600 text-sm sm:text-base lg:text-lg py-2 px-2 rounded-full font-medium">
           Workout Completed
         </span>
       </div>

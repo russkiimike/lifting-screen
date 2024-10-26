@@ -11,9 +11,9 @@ const BackgroundPattern: React.FC<BackgroundUrlProps> = ({ imgurl }) => {
         className="absolute inset-0 opacity-100"
         style={{
           backgroundImage: `url(${imgurl})`,
-          backgroundSize: '650px 650px',
+          backgroundSize: '350px 350px',
           backgroundPosition: 'center',
-          filter: 'blur(15px)',
+          filter: 'blur(5px)',
         }}
       />
       <div className="absolute inset-0 " />
