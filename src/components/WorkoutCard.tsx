@@ -8,6 +8,9 @@ import {
   Share2,
 } from 'lucide-react';
 
+
+
+
 interface WorkoutCardProps {
   weight: number;
   equivalent: number;

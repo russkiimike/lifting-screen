@@ -3,6 +3,7 @@ import WorkoutCard from './components/WorkoutCard';
 import WorkoutTweet from './components/WorkoutTweet';
 import BackgroundPattern from './components/BackgroundPattern';
 import ShareButton from './components/ShareButton';
+import InstagramShare from './components/InstagramShare';
 
 const gif_array = [
   'tFqd8tETnLISBqJ7an',
@@ -15,7 +16,7 @@ const gif = Math.floor(Math.random() * gif_array.length);
 
 function App() {
   const [selectedBackground] = useState('blue');
-  const gify = `https://media.giphy.com/media/${gif_array[gif]}/giphy.gif`;
+  const gify = `https://i.giphy.com/media/${gif_array[gif]}/giphy.gif`;
   const weights = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
   const bodyweights = 90;
 
@@ -44,7 +45,10 @@ function App() {
 
         {/* Share button with improved scaling */}
         <div className="w-full mb-8">
-          <ShareButton />
+        <InstagramShare 
+            imageUrl={gify}
+            title={`GymStreak - ${weights}kg Workout Achievement!`}
+          />
         </div>
       </div>
     </div>
