@@ -44,7 +44,7 @@ const InstagramShare: React.FC<InstagramShareProps> = ({ imageUrl, title, classN
     <button 
       onClick={shareToInstagram}
       className={`
-        w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700
+        w-full bg-blue-600
         text-white font-medium
         px-6 py-4 sm:py-5 lg:py-6
         rounded-2xl lg:rounded-3xl
@@ -57,7 +57,7 @@ const InstagramShare: React.FC<InstagramShareProps> = ({ imageUrl, title, classN
       `}
     >
       <Share2 className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
-      Share to Instagram
+      Share Achievement
     </button>
   );
 };
