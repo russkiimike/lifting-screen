@@ -12,7 +12,15 @@ const gif_array = [
   'oU44XTUcy9hhQvrAct',
 ];
 
+const caption_array = [
+  "Impressive weight, but let’s hope you don’t start suing anyone who out-lifts you",
+  "Lifting heavy, huh? Just don’t start taking other people's gym routines and calling them ‘collabs.’",
+  "Cool, now try doing it without taking the credit for someone else’s PRs.",
+  "Big lift! Just don’t be surprised if people start asking where their results went",
+];
+
 const gif = Math.floor(Math.random() * gif_array.length);
+const caption = Math.floor(Math.random() * caption_array.length);
 
 function App() {
   const [selectedBackground] = useState('blue');
@@ -40,6 +48,7 @@ function App() {
             backgroundColor={selectedBackground}
             opacity={90}
             imgurl={gify}
+            caption={caption_array[caption]}
           />
         </div>
 

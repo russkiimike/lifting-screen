@@ -21,6 +21,7 @@ interface WorkoutCardProps {
   backgroundColor: string;
   opacity: number;
   imgurl: string;
+  caption: string;
 }
 
 const WorkoutCard: React.FC<WorkoutCardProps> = ({
@@ -33,6 +34,7 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({
   backgroundColor,
   opacity,
   imgurl,
+  caption
 }) => {
   return (
     <div className="bg-gray-900 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-10 w-full text-white shadow-lg bg-opacity-80 mt-20">
@@ -70,8 +72,7 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({
       </div>
       <div className="text-center mb-8">
         <p className="text-lg font-bold sm:text-xl lg:text-2xl text-gray-300 mb-2">
-          "Careful—lift that much and you might start feeling entitled to take
-          credit for other people's gains!"
+         {caption}
         </p>
       </div>
     </div>

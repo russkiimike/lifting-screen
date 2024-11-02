@@ -18,6 +18,7 @@ interface WorkoutCardProps {
   backgroundColor: string;
   opacity: number;
   imgurl: string;
+  caption: string;
 }
 
 const WorkoutTweet: React.FC<WorkoutCardProps> = ({
