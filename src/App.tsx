@@ -6,18 +6,41 @@ import ShareButton from './components/ShareButton';
 import InstagramShare from './components/InstagramShare';
 
 const gif_array = [
-  'tFqd8tETnLISBqJ7an',
-  '8dr5eSrrKB7Ou4dBxK',
-  'pb38y9dUMDC71Pbmzj',
-  'oU44XTUcy9hhQvrAct',
+  'nn9LHpSANvHbb2b067',
+  'RMdUOuvSsIguL1HzLc',
+  'Sk1yTuKYkjBVZcP9zB',
+  '8viDc3rp94PdZgCtvz',
+  'MTv0uU43x8okH612dl',
+  'ExVqsLgEsODNwi68C6',
+  '8DgE3oxtIp7nnVN615',
+  'lT4N7JiPGATIhVwR91',
+  'WrIiyrvaFSeyVlxwtx'
+
+  
 ];
 
-const caption_array = [
+{/* const caption_array = [
   "Impressive weight, but let’s hope you don’t start suing anyone who out-lifts you",
   "Lifting heavy, huh? Just don’t start taking other people's gym routines and calling them ‘collabs.’",
   "Cool, now try doing it without taking the credit for someone else’s PRs.",
   "Big lift! Just don’t be surprised if people start asking where their results went",
 ];
+*/}
+const caption_array = [
+  "Nice lift, bro! Think you're gonna laugh it off if someone calls you out on that form?",
+  "Lifting heavy, huh? Watch out, or you'll be dodging leg day questions next!",
+  "Strong reps! Next thing, you'll be claiming it's historical!",
+  "Big lift—bet you'll laugh it off if anyone asks the real weight, right?",
+  "Impressive weight! But are those squats actually hitting depth, or what?",
+  "Lifting hard today? Just don't disappear when it's time to spot someone, okay?",
+  "Nice reps! Soon you'll be making speeches about how you *always* planned that weight.",
+  "Solid weight! Let's see if you can keep it up or if that was a one-time flex.",
+  "Big lifts—bet you'll say it's all part of a secret workout plan, huh?",
+  "Crushing it! But let's see if that form holds up when no one's watching.",
+];
+
+
+
 
 const gif = Math.floor(Math.random() * gif_array.length);
 const caption = Math.floor(Math.random() * caption_array.length);
@@ -26,7 +49,7 @@ function App() {
   const [selectedBackground] = useState('blue');
   const gify = `https://i.giphy.com/media/${gif_array[gif]}/giphy.gif`;
   const weights = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
-  const bodyweights = 90;
+  const bodyweights = 83;
 
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-start p-4 sm:p-6 lg:p-8 overflow-hidden relative">
@@ -41,7 +64,7 @@ function App() {
           <WorkoutCard
             weight={weights}
             equivalent={Math.round(weights / bodyweights)}
-            equivalentItem="Diddys"
+            equivalentItem="Donald Trumps"
             duration="1h 11m"
             exercises={4}
             records={3}
