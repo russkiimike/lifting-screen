@@ -6,15 +6,15 @@ import ShareButton from './components/ShareButton';
 import InstagramShare from './components/InstagramShare';
 
 const gif_array = [
-  'nn9LHpSANvHbb2b067',
-  'RMdUOuvSsIguL1HzLc',
-  'Sk1yTuKYkjBVZcP9zB',
-  '8viDc3rp94PdZgCtvz',
-  'MTv0uU43x8okH612dl',
-  'ExVqsLgEsODNwi68C6',
-  '8DgE3oxtIp7nnVN615',
-  'lT4N7JiPGATIhVwR91',
-  'WrIiyrvaFSeyVlxwtx'
+  '42OwvY1yJ43oZqpPwE',
+  'WFDSuW3kg4dKMX4nYJ',
+  'MVbhUJvmiZgzTXeWXY',
+  'oRs9L5y198p9oCw8JW',
+  'PgzSQB84aSzmvwWTmk',
+  'ibAUdHQyIF8t5237uJ',
+  'cKtrGGMCsmm3jfpq0l',
+  'QTglP1Qq11Phd9ohPc',
+  'PiqANNggX4tuAzu9gg'
 
   
 ];
@@ -25,7 +25,7 @@ const gif_array = [
   "Cool, now try doing it without taking the credit for someone else’s PRs.",
   "Big lift! Just don’t be surprised if people start asking where their results went",
 ];
-*/}
+
 const caption_array = [
   "Nice lift, bro! Think you're gonna laugh it off if someone calls you out on that form?",
   "Lifting heavy, huh? Watch out, or you'll be dodging leg day questions next!",
@@ -37,8 +37,20 @@ const caption_array = [
   "Solid weight! Let's see if you can keep it up or if that was a one-time flex.",
   "Big lifts—bet you'll say it's all part of a secret workout plan, huh?",
   "Crushing it! But let's see if that form holds up when no one's watching.",
-];
+]; */}
 
+const caption_array= [
+  "Nice lift! But let me guess, when it’s time to do leg day, you'll be… mysteriously unavailable.",
+  "Strong reps, but careful—pretty soon, you’ll be giving speeches on why this was the most meaningful set.",
+  "Big lift today! Just don’t break into that famous laugh if someone catches you skipping reps.",
+  "Impressive weight! But watch out, or you’ll be dodging gym questions faster than a press conference.",
+  "Solid PR—next thing, you’ll be telling us it’s historic lifting that weight.",
+  "Crushing that lift! But let’s see if you actually hold that form when it’s not for the crowd.",
+  "Big weights? Just don’t laugh it off if someone calls you out for missing depth.",
+  "Great lift, but let’s be real—are we actually gonna see you doing squats again next week?",
+  "Nice PR! But careful, soon you’ll be explaining why the plan was always to lift exactly that.",
+  "Going big today! Just don’t expect anyone to forget if you skip leg day next.",
+];
 
 
 
