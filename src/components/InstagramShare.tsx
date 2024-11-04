@@ -1,48 +1,33 @@
 import React from 'react';
 import { Share2 } from 'lucide-react';
 
-interface InstagramShareProps {
-  imageUrl: string;
+interface ShareProps {
+  url: string;
   title: string;
+  text: string;
   className?: string;
 }
 
-const InstagramShare: React.FC<InstagramShareProps> = ({ imageUrl, title, className }) => {
-  const shareToInstagram = async () => {
+const LinkShare: React.FC<ShareProps> = ({ url, title, text, className }) => {
+  const shareData = {
+    title: title,
+    text: text,
+    url: url,
+  };
+
+  const shareLink = async () => {
     try {
-      // Fetch the image and convert to blob
-      const response = await fetch(imageUrl);
-      const blob = await response.blob();
-
-      // Create a File object from the blob
-      const filesArray = [
-        new File([blob], `${title}.png`, {
-          type: 'image/png',
-          lastModified: new Date().getTime(),
-        }),
-      ];
-
-      const shareData = {
-        title: title,
-        files: filesArray,
-      };
-
-      // Check if sharing is supported
-      if (navigator.canShare && navigator.canShare(shareData)) {
-        await navigator.share(shareData);
-      } else {
-        console.log('Sharing not supported on this platform');
-        // Fallback for desktop or unsupported browsers
-        window.open(imageUrl, '_blank');
-      }
-    } catch (error) {
-      console.error('Error sharing:', error);
+      // Attempt to share content
+      await navigator.share(shareData);
+      console.log('Content shared successfully');
+    } catch (err) {
+      console.error(`Error: ${err}`);
     }
   };
 
   return (
     <button 
-      onClick={shareToInstagram}
+      onClick={shareLink}
       className={`
         w-full bg-blue-600
         text-white font-medium
@@ -62,4 +47,4 @@ const InstagramShare: React.FC<InstagramShareProps> = ({ imageUrl, title, classN
   );
 };
 
-export default InstagramShare;
+export default LinkShare;

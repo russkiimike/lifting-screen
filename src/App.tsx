@@ -3,7 +3,7 @@ import WorkoutCard from './components/WorkoutCard';
 import WorkoutTweet from './components/WorkoutTweet';
 import BackgroundPattern from './components/BackgroundPattern';
 import ShareButton from './components/ShareButton';
-import InstagramShare from './components/InstagramShare';
+import LinkShare from './components/InstagramShare';
 
 const gif_array = [
   '42OwvY1yJ43oZqpPwE',
@@ -76,7 +76,7 @@ function App() {
           <WorkoutCard
             weight={weights}
             equivalent={Math.round(weights / bodyweights)}
-            equivalentItem="Donald Trumps"
+            equivalentItem="Kamala Harrises"
             duration="1h 11m"
             exercises={4}
             records={3}
@@ -89,10 +89,7 @@ function App() {
 
         {/* Share button with improved scaling */}
         <div className="w-full mb-8">
-        <InstagramShare 
-            imageUrl={gify}
-            title={`GymStreak - ${weights}kg Workout Achievement!`}
-          />
+        <LinkShare url='https://lifting-temp.netlify.app/'  title={`GymStreak - ${weights}kg Workout Achievement!`} text="loool"/>
         </div>
       </div>
     </div>
