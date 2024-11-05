@@ -6,25 +6,26 @@ import ShareButton from './components/ShareButton';
 import LinkShare from './components/InstagramShare';
 
 const gif_array = [
-  '42OwvY1yJ43oZqpPwE',
-  'WFDSuW3kg4dKMX4nYJ',
-  'MVbhUJvmiZgzTXeWXY',
-  'oRs9L5y198p9oCw8JW',
-  'PgzSQB84aSzmvwWTmk',
-  'ibAUdHQyIF8t5237uJ',
-  'cKtrGGMCsmm3jfpq0l',
-  'QTglP1Qq11Phd9ohPc',
-  'PiqANNggX4tuAzu9gg'
+  'nn9LHpSANvHbb2b067',
+  'RMdUOuvSsIguL1HzLc',
+  'Sk1yTuKYkjBVZcP9zB',
+  '8viDc3rp94PdZgCtvz',
+  'MTv0uU43x8okH612dl',
+  'ExVqsLgEsODNwi68C6',
+  '8DgE3oxtIp7nnVN615',
+  'lT4N7JiPGATIhVwR91',
+  'WrIiyrvaFSeyVlxwtx'
 
   
+  
 ];
-
-{/* const caption_array = [
+{/*
+ const caption_array = [
   "Impressive weight, but let’s hope you don’t start suing anyone who out-lifts you",
   "Lifting heavy, huh? Just don’t start taking other people's gym routines and calling them ‘collabs.’",
   "Cool, now try doing it without taking the credit for someone else’s PRs.",
   "Big lift! Just don’t be surprised if people start asking where their results went",
-];
+];*/}
 
 const caption_array = [
   "Nice lift, bro! Think you're gonna laugh it off if someone calls you out on that form?",
@@ -37,7 +38,9 @@ const caption_array = [
   "Solid weight! Let's see if you can keep it up or if that was a one-time flex.",
   "Big lifts—bet you'll say it's all part of a secret workout plan, huh?",
   "Crushing it! But let's see if that form holds up when no one's watching.",
-]; */}
+]; 
+
+{/*
 
 const caption_array= [
   "Nice lift! But let me guess, when it’s time to do leg day, you'll be… mysteriously unavailable.",
@@ -50,7 +53,7 @@ const caption_array= [
   "Great lift, but let’s be real—are we actually gonna see you doing squats again next week?",
   "Nice PR! But careful, soon you’ll be explaining why the plan was always to lift exactly that.",
   "Going big today! Just don’t expect anyone to forget if you skip leg day next.",
-];
+]; */}
 
 
 
@@ -76,7 +79,7 @@ function App() {
           <WorkoutCard
             weight={weights}
             equivalent={Math.round(weights / bodyweights)}
-            equivalentItem="Kamala Harrises"
+            equivalentItem="Donald Trumps"
             duration="1h 11m"
             exercises={4}
             records={3}
